@@ -47,4 +47,7 @@ describe("favourites reducer", () => {
 	it("should handle a second movie", () => {
 		expect(reducer.favourites([movie], { type: "ADD_TO_FAVS", content: movie2 })).toEqual([movie, movie2]);
 	});
+	it("should reject duplicated movies", () => {
+		expect(reducer.favourites([movie], { type: "ADD_TO_FAVS", content: movie })).toEqual([movie]);
+	});
 });
