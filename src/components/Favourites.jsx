@@ -25,7 +25,7 @@ class Favourites extends Component {
 			<div className="root">
 				<Header internalSearch imputValue={this.state.search} inputChange={this.handleChange} />
 				<div className="gridList">
-					<GridList cellHeight={"250"}>
+					<GridList cellHeight={250}>
 						<Subheader style={{ fontSize: "20px" }}>My favourites:</Subheader>
 						{this.props.favs
 							.filter(movie => `${movie.Title}`.toUpperCase().indexOf(this.state.search.toUpperCase()) >= 0)

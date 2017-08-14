@@ -62,7 +62,7 @@ class Search extends Component {
 				<div className="page-title">
 					<form onSubmit={this.handleSubmit}>
 						<TextField
-							name="SearchText"
+							name="searchText"
 							fullWidth={true}
 							onChange={this.handleChange}
 							value={this.state.search}
