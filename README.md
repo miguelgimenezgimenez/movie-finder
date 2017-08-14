@@ -40,7 +40,7 @@ The data is fetched from The Open Movie Database API and The Movie DB API (NOTE:
 - Go to the project folder ```cd movie-finder```.
 - Then run ```yarn install``` from your terminal to install all required dependencies (you can also run ```npm install```).
 - Run ```yarn start``` (or ```npm start```).
-- Go to http://localhost:3000/
+- Go to http://localhost:8080/
 - To run the tests: ```yarn test``` (or ```npm test```)
 
 ### Screenshots:
