@@ -36,8 +36,8 @@ The data is fetched from The Open Movie Database API and The Movie DB API (NOTE:
 
 ### To run the app:
 
-- First clone this repository in your local machine ```git clone http://xxxxxxx```.
-- Go to the project folder ```cd xxxxxxx```.
+- First clone this repository in your local machine ```git clone https://github.com/mapageKA21/movie-finder```.
+- Go to the project folder ```cd movie-finder```.
 - Then run ```yarn install``` from your terminal to install all required dependencies (you can also run ```npm install```).
 - Run ```yarn start``` (or ```npm start```).
 - Go to http://localhost:3000/
