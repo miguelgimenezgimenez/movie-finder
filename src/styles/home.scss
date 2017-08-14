@@ -1,0 +1,12 @@
+.main-style {
+	margin: auto;
+	border: 2px solid $color;
+	width: 50%;
+	margin-top: $big-margin;
+	border-radius: 10px;
+}
+
+.main-style:hover {
+	box-shadow: $shadows;
+	transition: $efect;
+}
