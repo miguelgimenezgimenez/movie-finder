@@ -1,12 +1,10 @@
 .notFound {
-	height: 100%;
-	width: 100%;
 	text-align: center;
 }
 
 .notFound h3 {
+	color: #555;
+	left: 30%;
 	position: absolute;
 	top: 50%;
-	color: $title-color;
-	left: 30%;
 }

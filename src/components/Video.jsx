@@ -3,7 +3,7 @@ import Dialog from "material-ui/Dialog";
 import FlatButton from "material-ui/FlatButton";
 
 const Video = props => {
-	const actions = [<FlatButton label="Close" primary={true} onTouchTap={props.close} />];
+	const actions = <FlatButton label="Close" primary={true} onTouchTap={props.close} />;
 	return (
 		<Dialog title={props.movie.Title} actions={actions} modal={false} open={props.open} onRequestClose={props.close}>
 			<div style={{ margin: "40px" }}>
