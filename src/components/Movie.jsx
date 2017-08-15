@@ -29,6 +29,7 @@ class Movie extends Component {
 
   render() {
     const movie = this.props.location.state;
+
     return (
       <div>
         <Header />
