@@ -38,7 +38,7 @@ class Movie extends Component {
             <CardHeader title={movie.Title} subtitle={movie.Genre} />
             <CardActions>
               <RaisedButton primary={true} label="Add to favourites" onClick={() => this.addToFavs(movie)} />
-              <RaisedButton primary={true} label="Watch Trailer" onClick={this.handleOpen} />
+              {movie.trailer ? <RaisedButton primary={true} label="Watch Trailer" onClick={this.handleOpen} /> : null}
             </CardActions>
             <CardMedia overlay={<CardTitle title={movie.Director} subtitle={movie.imdbRating} />}>
               <img
