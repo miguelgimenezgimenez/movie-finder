@@ -11,7 +11,9 @@ import pic from "../images/notFound.jpg";
 class Movie extends Component {
   state = {
     videoOpen: false,
-    snackbarOpen: false
+    snackbarOpen: false,
+    snackbarWarning: false,
+    added: false
   };
 
   handleOpen = () => {
@@ -24,7 +26,7 @@ class Movie extends Component {
 
   addToFavs = movie => {
     this.props.dispatch(add(movie));
-    this.setState({ snackbarOpen: true });
+    !this.state.added ? this.setState({ snackbarOpen: true, added: true }) : this.setState({ snackbarWarning: true });
   };
 
   render() {
@@ -57,6 +59,7 @@ class Movie extends Component {
           </Card>
         </div>
         <Snackbar open={this.state.snackbarOpen} message="Movie added to favourites!" autoHideDuration={2000} />
+        <Snackbar open={this.state.snackbarWarning} message="Can't add the same movie twice!" autoHideDuration={2000} />
       </div>
     );
   }
