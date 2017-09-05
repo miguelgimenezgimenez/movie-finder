@@ -7,7 +7,6 @@ import Subheader from "material-ui/Subheader";
 import StarBorder from "material-ui/svg-icons/toggle/star-border";
 import pic from "../images/notFound.jpg";
 
-
 class Favourites extends Component {
 	state = {
 		search: ""
